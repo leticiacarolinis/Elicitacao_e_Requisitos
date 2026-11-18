@@ -1,4 +1,4 @@
-# Aula 9 – Personas e casos de uso
+# Aula 9 – Personas e casos de uso.
 
 ## Sistema escolhido: Sistema de Delivery de Alimentos
 
