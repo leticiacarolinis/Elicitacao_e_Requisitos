@@ -1,0 +1,26 @@
+<mxfile host="app.diagrams.net" modified="2026-11-18T17:45:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="delivery-use-cases" name="Casos de uso">
+    <mxGraphModel dx="1200" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="880" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="boundary" value="Sistema de Delivery de Alimentos" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingTop=12;spacingLeft=16;fontStyle=1;fontSize=18;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="220" y="70" width="760" height="620" as="geometry"/></mxCell>
+        <mxCell id="cliente" value="Cliente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1"><mxGeometry x="80" y="280" width="60" height="150" as="geometry"/></mxCell>
+        <mxCell id="restaurante" value="Restaurante" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" vertex="1" parent="1"><mxGeometry x="1060" y="275" width="60" height="150" as="geometry"/></mxCell>
+        <mxCell id="gateway" value="Gateway de pagamento" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=15;" vertex="1" parent="1"><mxGeometry x="570" y="700" width="60" height="120" as="geometry"/></mxCell>
+        <mxCell id="uc1" value="Consultar cardápio" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#315A8A;fillColor=#F5F8FF;fontSize=16;" vertex="1" parent="1"><mxGeometry x="260" y="157" width="290" height="96" as="geometry"/></mxCell>
+        <mxCell id="uc2" value="Realizar pedido" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#315A8A;fillColor=#F5F8FF;fontSize=16;" vertex="1" parent="1"><mxGeometry x="570" y="157" width="290" height="96" as="geometry"/></mxCell>
+        <mxCell id="uc3" value="Acompanhar pedido" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#315A8A;fillColor=#F5F8FF;fontSize=16;" vertex="1" parent="1"><mxGeometry x="260" y="317" width="290" height="96" as="geometry"/></mxCell>
+        <mxCell id="uc4" value="Gerenciar disponibilidade" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#315A8A;fillColor=#F5F8FF;fontSize=16;" vertex="1" parent="1"><mxGeometry x="550" y="317" width="330" height="96" as="geometry"/></mxCell>
+        <mxCell id="uc5" value="Atualizar status do pedido" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#315A8A;fillColor=#F5F8FF;fontSize=16;" vertex="1" parent="1"><mxGeometry x="550" y="467" width="330" height="96" as="geometry"/></mxCell>
+        <mxCell id="uc6" value="Processar pagamento" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#315A8A;fillColor=#F5F8FF;fontSize=16;" vertex="1" parent="1"><mxGeometry x="260" y="507" width="290" height="96" as="geometry"/></mxCell>
+        <mxCell id="e1" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="cliente" target="uc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="cliente" target="uc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="cliente" target="uc3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="restaurante" target="uc4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="restaurante" target="uc5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="gateway" target="uc6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="&lt;&lt;include&gt;&gt;" style="dashed=1;endArrow=open;html=1;fontSize=14;" edge="1" parent="1" source="uc2" target="uc6"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

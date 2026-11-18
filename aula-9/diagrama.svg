@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="880" viewBox="0 0 1200 880">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker>
+    <style>
+      .boundary{fill:#fff;stroke:#333;stroke-width:2.5}
+      .usecase{fill:#f5f8ff;stroke:#315a8a;stroke-width:2}
+      .actor{stroke:#222;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .association{stroke:#555;stroke-width:2;fill:none}
+      .include{stroke:#555;stroke-width:2;stroke-dasharray:8 6;fill:none;marker-end:url(#arrow)}
+      .label{font-family:Arial,sans-serif;fill:#222;font-size:20px}
+      .small{font-family:Arial,sans-serif;fill:#333;font-size:16px}
+      .systemtitle{font-family:Arial,sans-serif;fill:#222;font-size:23px;font-weight:bold}
+      .actorlabel{font-family:Arial,sans-serif;fill:#222;font-size:19px;font-weight:bold;text-anchor:middle}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1200" height="880" fill="#ffffff"/>
+  <rect x="220" y="70" width="760" height="620" rx="8" class="boundary"/>
+  <text x="245" y="108" class="systemtitle">Sistema de Delivery de Alimentos</text>
+
+  <!-- Cliente -->
+  <g class="actor">
+    <circle cx="110" cy="290" r="22"/>
+    <path d="M110 312 L110 380 M75 340 L145 340 M110 380 L78 430 M110 380 L142 430"/>
+  </g>
+  <text x="110" y="465" class="actorlabel">Cliente</text>
+
+  <!-- Restaurante -->
+  <g class="actor">
+    <circle cx="1090" cy="285" r="22"/>
+    <path d="M1090 307 L1090 375 M1055 335 L1125 335 M1090 375 L1058 425 M1090 375 L1122 425"/>
+  </g>
+  <text x="1090" y="460" class="actorlabel">Restaurante</text>
+
+  <!-- Gateway -->
+  <g class="actor">
+    <circle cx="600" cy="735" r="18"/>
+    <path d="M600 753 L600 795 M574 765 L626 765 M600 795 L580 820 M600 795 L620 820"/>
+  </g>
+  <text x="600" y="865" class="actorlabel">Gateway de pagamento</text>
+
+  <!-- Use cases -->
+  <ellipse cx="405" cy="205" rx="145" ry="48" class="usecase"/>
+  <text x="405" y="212" class="label" text-anchor="middle">Consultar cardápio</text>
+
+  <ellipse cx="715" cy="205" rx="145" ry="48" class="usecase"/>
+  <text x="715" y="212" class="label" text-anchor="middle">Realizar pedido</text>
+
+  <ellipse cx="405" cy="365" rx="145" ry="48" class="usecase"/>
+  <text x="405" y="372" class="label" text-anchor="middle">Acompanhar pedido</text>
+
+  <ellipse cx="715" cy="365" rx="165" ry="48" class="usecase"/>
+  <text x="715" y="372" class="label" text-anchor="middle">Gerenciar disponibilidade</text>
+
+  <ellipse cx="715" cy="515" rx="165" ry="48" class="usecase"/>
+  <text x="715" y="522" class="label" text-anchor="middle">Atualizar status do pedido</text>
+
+  <ellipse cx="405" cy="555" rx="145" ry="48" class="usecase"/>
+  <text x="405" y="562" class="label" text-anchor="middle">Processar pagamento</text>
+
+  <!-- Associations: Cliente -->
+  <path d="M145 340 L260 205" class="association"/>
+  <path d="M145 350 L570 205" class="association"/>
+  <path d="M145 360 L260 365" class="association"/>
+
+  <!-- Associations: Restaurante -->
+  <path d="M1055 335 L880 365" class="association"/>
+  <path d="M1055 350 L880 515" class="association"/>
+
+  <!-- Association: Gateway -->
+  <path d="M600 735 L510 590" class="association"/>
+
+  <!-- Include relationship -->
+  <path d="M600 250 L505 515" class="include"/>
+  <text x="500" y="405" class="small" transform="rotate(-70 500 405)">&lt;&lt;include&gt;&gt;</text>
+
+</svg>
